@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contoh Kotak dengan Judul, Gambar, dan Deskripsi Panjang di Tengah</title>
+<style>
+   
+   body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: antiquewhite; 
+    }
+    .container {
+        width: 900px;
+        margin: 0 auto; /* Mengatur margin atas dan bawah ke auto untuk pemisahan */
+        border: 2px solid #333;
+        padding: 20px;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        background-color: white; 
+    }
+    h1 {
+        width: 900px;
+        margin: 20px auto 0 auto; /* Menambahkan margin bawah */
+        border: 2px solid #333;
+        padding: 20px;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        background-color: white; 
+    }
+    .gambar {
+        text-align: center; /* Mengatur gambar menjadi pusat */
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+    .deskripsi {
+        text-align: center; /* Mengatur deskripsi menjadi pusat */
+    }
+    .p1 {
+        font-size: 18px;
+        color: blue; 
+        margin-bottom: 10px;
+    }
+    .p2 {
+        font-size: 18px;
+        color: black; 
+        text-align: justify;
+    }
+    .tombol {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .tombol:hover {
+        background-color: #ddd;
+    }
+</style>
+</head>
+<body>
+    <h1>Exercise 1 PDW</h1> <!-- Pindahkan judul di luar dari kontainer -->
+    <div class="container">
+        <div class="deskripsi">
+            <p class="p1">Deskripsi :</p>
+            <p class="p2"></p>
+        </div>
+    </div>
+    <div class="gambar">
+        <img src="Cat.jpg" alt="Gambar">
+    </div>
+    <div style="text-align: center;"> <!-- Membuat container untuk tombol -->
+        <button class="tombol">Button</button>
+    </div>
+</body>
+</html>
